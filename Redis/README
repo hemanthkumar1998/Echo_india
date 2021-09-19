@@ -1,4 +1,4 @@
-To Run the script in Linux distribution:
+Redis Server installation  in Linux distribution:
 
 This downloads and install redis-server on the system
 $ wget https://download.redis.io/releases/redis-6.2.5.tar.gz
@@ -9,8 +9,10 @@ To run redis-server:
     $src/redis-server
 
 
-To Run the script in Windows:
+Redis Server installation  in Windows:
  Download the msi from : https://github.com/MicrosoftArchive/redis/releases
  walk through the installer and complete the installation
  To run redis-server:
     redis-server --service-start
+
+Run the script drivre.py using "python driver.py"

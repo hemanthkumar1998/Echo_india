@@ -1,0 +1,15 @@
+Multiprocessing :
+    Multiprocess is a technique where parallelism can be achieved . With multiprocessing each task is taken by a seperate a process across multiple cpu cores. It takes seperate memory for task. This is suitable for cpu related tasks
+
+
+Multithreading:
+    TO do different task multiple threads can be created so that it is spawned by process
+    as different task on single core .Each threads run in concurrent manner.Memory space is shared by thread .Suitable for I/o task
+
+
+GIL:
+    Global Interpreter Lock
+    In python programs are mostly single-thread and use one cpu ,so this applies an lock over the interpreter and allows only one thread to hold the interpreter 
+    This doesnt facilitates multiprocessing automatically since multiple process would be running across multiple cpu and if the interpreter is locked by single process the entire point of multi process is a failure. 
+    
+    To over come this and to implement multiprocessing, each process is given with seperate GIL and instance of interpreter

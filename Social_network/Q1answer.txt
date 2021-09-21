@@ -1,0 +1,11 @@
+How to scale it to million of users?
+Database scaling:
+    The Mongodb can scaled to million of user if we replicate the db in multiple places corresponding with user location ,by this way we can eliminate user request overhead since the request are not made to centeralized db but to the decentralized db (replicaset)
+
+    Vertical scaling is possible for both relational and non-relational db but the cost of increasing the hardware would be more 
+    
+    Horizontal scaling in Mongodb can be performed
+    using shradding 
+    
+Application scaling:
+    The monolithic architecture can be seperated into other machine and the load balancer should be used to evenly distribute the loads

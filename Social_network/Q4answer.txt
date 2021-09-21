@@ -1,0 +1,7 @@
+How to scale the api and secure it?
+    The traffic should be handled properly by using the load balancers and the api failovers should be handled. Ability to handle variety of request is an added advantage for scaling .
+    The rate limiter for an api can help to decrease the loads
+
+    We can scale the the api horizontally as it would incur more server and reduces the loads.For better performance we can cache and queue 
+    
+    The api can be secured using credentials authtokens which authorizes the user into the application these auth token serves the data required . On top we can secure the api with setting a particular session to minimal time ie . setting the token to expire within minimal period of time 
